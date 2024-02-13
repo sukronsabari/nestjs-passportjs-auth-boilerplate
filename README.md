@@ -23,27 +23,50 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
-
+This is a boilerplate for setting up an NestJs server with TypeScript. It provides a basic structure to kickstart your backend development.
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Features
+-   Nest.js server setup with TypeScript
+-   Security middleware setup (e.g helmet, rate-limiter)
+-   Authentication and Authorization with PassPort (LocalStrategy, GoogleStrategy, JwtStrategy)
+-   Prisma ORM
 
-```bash
-$ npm install
-```
+## Getting Started
+To get started with this boilerplate, follow these steps:
 
-## Running the app
+1.  Clone the repository to your local machine:
+   	```bash
+	$ git clone https://github.com/sukronsabari/nestjs-passportjs-auth-boilerplate.git
+	```
+2.  Navigate to the project directory:
+   	```bash
+	$ cd nestjs-passportjs-auth-boilerplate
+	```
+3. Install dependencies:
+   ```bash
+    $ npm install
+    ``` 
+    
+    or
+    
+    ```bash
+    $ yarn
+    ``` 
+4. Running the server:
+    ```bash
+    # development
+    $ npm run start
+    
+    # watch mode
+    $ npm run start:dev
+    
+    # production mode
+    $ npm run start:prod
+  ```
+    
+5.  Open your browser and navigate to `http://localhost:3000` to see the server running.
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
 
 ## Test
 
