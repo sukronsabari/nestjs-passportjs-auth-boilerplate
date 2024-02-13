@@ -1,0 +1,7 @@
+{
+  "email_already_use": "Email address is already in use",
+  "incorrect_email_password": "Incorrect email address or password",
+  "in_active_account": "Your account is not active, please check your email to activate your account",
+  "invalid_token": "Invalid or Expired token. Please login again",
+  "invalid_login_method": "This account is not logged in using this method, use other methods such as Google and Facebook OAuth"
+}

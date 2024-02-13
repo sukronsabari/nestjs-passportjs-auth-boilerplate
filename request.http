@@ -1,0 +1,39 @@
+#### AUTHH
+
+### auth - register
+POST http://localhost:3000/register
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmN0VCcGR6c0NCdmNKUlhpZGtzY24iLCJlbWFpbCI6ImRhdmlkQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA3NDYzNjAzLCJleHAiOjE3MDc0NjM4MDN9.xLxocWD1GpBCoHT__2jduENs4f5S0vOjB2NEwd3blns
+
+{
+  "name": "Gaga",
+  "email": "randommail2@gmail.com",
+  "password": "12434343",
+  "role": "ADMIN"
+}
+
+### auth - login
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+  "email": "david11@gmail.com",
+  "password": "12345"
+}
+
+### auth - refreshToken
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3bEhaUU5Od3lCWjI2MWFXQnAtOXUiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwNzgwNTQxMSwiZXhwIjoxNzA4NDEwMjExfQ.Yu3YmIgLPDdKYTUiH5vFYLEykrSOz5pYtj8zokI0dj4"
+}
+
+### auth - logout
+POST http://localhost:3000/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3bEhaUU5Od3lCWjI2MWFXQnAtOXUiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwNzgwNjYzNiwiZXhwIjoxNzA3OTc5NDM2fQ.MG25sxpouBYpfq-v1aTFGcyMCqrfICtOnzk-QqOw_mY
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ3bEhaUU5Od3lCWjI2MWFXQnAtOXUiLCJuYW1lIjoiRGF2aWQiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwNzgwNjcxOCwiZXhwIjoxNzA4NDExNTE4fQ._Ng2C1U3UQ64N3dNo2jxAvgKpRfSArQ9DGH5LzeTVEI"
+}
